@@ -15,15 +15,16 @@ def set_png_as_page_bg(png_file):
 	page_bg_img = """
 		<style>
 			body{
-			background-image: url('data:images/png;base64, %s');
+			background-image: url('data:image/png;base64, %s');
 			background-size: cover;
 			}
 		</style>
-	""" %bin_str
+	""" % bin_str
 	st.markdown(page_bg_img, unsafe_allow_html=True)
 	return
 
 def upload_data():
+	set_png_as_page_bg('images/olist_logo.png')
 	st.subheader('Use Batch Sentiment Analyzer')
 	st.write('Upload the review dataset to get the sentiment of each review')
 
