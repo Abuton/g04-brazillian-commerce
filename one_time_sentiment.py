@@ -10,7 +10,6 @@ with open('sentiment analysis app/pickle files/log_reg.pkl', 'rb') as f:
 with open('sentiment analysis app/pickle files/tfidf_vectorizer.pkl', 'rb') as f:
 	tfidf_vectorizer = pickle.load(f)
 
-
 def one_time_sentiment():
 	st.subheader('Sentiment Analyzer')
 	review = st.text_area('Review Text', 'Enter your Review in Portuguese')
