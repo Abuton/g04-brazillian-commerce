@@ -27,7 +27,7 @@ def main():
 										 unsafe_allow_html=True)
 
 	st.title('Olist User Review')
-	menu = ['Project Description & Analysis :bar_chart: :chart_with_upwards_trend:', 'Sentiment Analyzer', 'Batch Sentiment Analyzer', 'About']
+	menu = ['Project Description & Analysis', 'Sentiment Analyzer', 'Batch Sentiment Analyzer', 'About']
 	choice = st.sidebar.selectbox('Menu', menu)
 	st.markdown(sidebar_css, unsafe_allow_html=True)
 
@@ -43,7 +43,7 @@ def main():
 		# st.image('data/test.jpg', width=150, height=30)
 		# st.write('Jerry\n Web App')
 
-	if choice == 'Project Description & Analysis :bar_chart: :chart_with_upwards_trend:':
+	if choice == 'Project Description & Analysis':
 		analysis()
 
 	if choice == 'Sentiment Analyzer':
