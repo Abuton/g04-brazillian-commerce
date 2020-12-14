@@ -1,6 +1,7 @@
 from google_trans_new import google_translator
 import streamlit as st
 import pickle
+from upload import set_png_as_page_bg
 
 
 with open('sentiment analysis app/pickle files/log_reg.pkl', 'rb') as f:
@@ -10,6 +11,7 @@ with open('sentiment analysis app/pickle files/tfidf_vectorizer.pkl', 'rb') as f
 	tfidf_vectorizer = pickle.load(f)
 
 def one_time_sentiment():
+	set_png_as_page_bg('images/olist_logo.png')
 	st.subheader('Sentiment Analyzer')
 	review = st.text_area('Review Text', 'Enter your Review in Portuguese')
 	
@@ -30,7 +32,7 @@ def one_time_sentiment():
 			prediction = int(model.predict(tfidf_vectorizer.transform([review])))
 			if prediction == 1:
 				st.success('**Review text is Positive :joy: :white_check_mark:**')
-				st.balloons()
+				# st.balloons()
 			elif prediction == 0:
 				st.error('**Review text is Negative :x: :angry:**')
 

@@ -97,15 +97,6 @@ def analysis():
 	"""
 	Main App
 	"""
-
-	st.markdown("""
-		**Recommendations::** \n
-		1. Olist stores should ensure reduced delivery time for ordered goods. \n
-		2. Improve their logistics on good delivery \n
-		3. They could establish stores in different cities to enhance quick delivery - Olist Stores is located in Curitiba - PR(Puerto Rico). Majority of orders from same state were delivered on time and have high review scores.\n
-		4. The top cities with high orders and sales showed a small average delivery time which indicates that delivery time is a major cause of customer churn \n
-		""")
-
 	st.title('Time Series Analysis')
 
 	st.write('''
@@ -291,9 +282,9 @@ def analysis():
 	st.markdown("""
 		**Recommendations::** \n
 		1. Olist stores should ensure reduced delivery time for ordered goods. \n
-		2. Improve their logistics on good delivery \n
+		2. Improve their logistics on goods delivery \n
 		3. They could establish stores in different cities to enhance quick delivery - Olist Stores is located in Curitiba - PR(Puerto Rico). Majority of orders from same state were delivered on time and have high review scores.\n
-		4. The top cities with high orders and sales showed a small average delivery time which indicates that delivery time is a major cause of customer churn \n
+		4. The top cities with high orders and sales showed a small average delivery time which indicates that delivery time is a major cause of customer churn. This could be improved by hiring more staffs to keep to demands of customers and ultimately increase profit\n
 		""")
 
 if __name__ == '__main__':
