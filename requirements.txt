@@ -3,3 +3,4 @@ streamlit==0.69.2
 scikit-learn==0.23.2
 plotly==4.14.1
 pandas==1.1.5
+maplotlib==3.2.2
